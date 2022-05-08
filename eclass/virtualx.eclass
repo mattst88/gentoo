@@ -14,6 +14,9 @@ case ${EAPI} in
 	*) die "${ECLASS}: EAPI ${EAPI:-0} is not supported." ;;
 esac
 
+
+inherit dbus-session
+
 if [[ ! ${_VIRTUALX_ECLASS} ]]; then
 _VIRTUALX_ECLASS=1
 
